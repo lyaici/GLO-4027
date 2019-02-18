@@ -1,0 +1,16 @@
+{
+  "name": "GLO-4027",
+  "version": "0.1.0",
+  "description": "Airbnb big data analysis",
+  "main": "app.js",
+  "repository": "https://github.com/lyaici/GLO-4027.git",
+  "author": "Team4",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "mongodb": "^3.1.13"
+  }
+}
