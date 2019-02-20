@@ -1,1 +1,3 @@
-const DBManager = require('Manager/Database/DBManager');
+const Test = require('./src/Test');
+
+Test.countLines();
