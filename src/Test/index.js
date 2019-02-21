@@ -22,6 +22,8 @@ class Test {
           };
           fs.appendFileSync('./Data/sessionstest.json', `${JSON.stringify(object)},`);
         });
+      }).on('end', () => {
+        fs.appendFile('./Data/sessionstest.json', ']');
       })
     )
     console.log('hey');
