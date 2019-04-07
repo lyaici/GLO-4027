@@ -1,3 +1,4 @@
-const Test = require('./src/Test');
+const Calcul = require('./src/Calcul');
 
-Test.countLines();
+Calcul.cleanTestUser();
+Calcul.cleanUser();

@@ -10,7 +10,7 @@ class Test {
     .pipe(
       es.mapSync((file) => {
         const lines = file.split('\n');
-        lines.forEach(element => {
+        lines.forEach((element, i) => {
           const line = element.split(',');
           const object = {
             user_id: line[0],
@@ -20,7 +20,9 @@ class Test {
             device_type: line[4],
             secs_elapsed: line[5]
           };
-          fs.appendFileSync('./Data/sessionstest.json', `${JSON.stringify(object)},`);
+          if (lines.length === i) {
+            fs.appendFileSync('./Data/sessionstest.json', `${JSON.stringify(object)}`);  
+          } else fs.appendFileSync('./Data/sessionstest.json', `${JSON.stringify(object)},`);
         });
       }).on('end', () => {
         fs.appendFile('./Data/sessionstest.json', ']');
