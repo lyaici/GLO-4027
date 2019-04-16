@@ -26,6 +26,12 @@ class Cleaner {
     fs.writeFileSync('./Data/users.json', JSON.stringify(test_user));
   }
 
+  cleanUsersv2() {
+    const usersv2 = JSON.parse(fs.readFileSync('./Data/test_usersv2.json', 'utf8'));
+    const newUsersv2 = usersv2.filter(element => element.country_destination !== 'NDF');
+    fs.writeFileSync('./Data/usersv3.json', JSON.stringify(newUsersv2));
+  }
+
 }
 
 module.exports = new Cleaner();

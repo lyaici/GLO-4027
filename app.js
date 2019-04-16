@@ -9,5 +9,5 @@ Normalizer.normalizeAge();
 Normalizer.normalizeSignupFlow();
 Test.getMaxAge();
 Test.getMaxSignupFlow();*/
-
+//Cleaner.cleanUsersv2();
 Calcul.calculateDissimilarity();
