@@ -11,3 +11,4 @@ Test.getMaxAge();
 Test.getMaxSignupFlow();*/
 //Cleaner.cleanUsersv2();
 Calcul.calculateDissimilarity();
+//Calcul.proportion();
